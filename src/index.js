@@ -20,7 +20,7 @@ function App() {
     <main className = "grid justify-center bg-purple-800 text-white h-screen">
       <section className='m-auto text-center'>
         <h1 className='text-7xl'>Counter</h1>
-        <div className='text-5xl py-12'>{count}</div>
+        <div className='text-5xl py-4 my-7 border border-white border-dashed rounded-full'>{count}</div>
         <div className='flex justify-center gap-5'>
           <button className='bg-yellow-400 hover:bg-yellow-600 py-3 px-10 font-bold text-xl rounded-2xl' onClick={Increase}>Increase</button>
           <button className='bg-pink-400 hover:bg-pink-600 py-3 px-10 font-bold text-xl rounded-2xl'  onClick={Decrease}>Decrease</button>
