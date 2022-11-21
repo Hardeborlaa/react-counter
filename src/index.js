@@ -9,21 +9,21 @@ class Counter extends React.Component {
     this.state = {
       count: 0
     }
-    this.Increase = this.Increase.bind(this,[]);
-    this.Decrease = this.Decrease.bind(this,[]);
-    this.Reset = this.Reset.bind(this,[]);
+    this.increase = this.increase.bind(this,[]);
+    this.decrease = this.decrease.bind(this,[]);
+    this.reset = this.reset.bind(this,[]);
   }
-  Increase(){
+  increase(){
     this.setState({
       count: this.state.count + 1
     });
   }
-  Decrease(){
+  decrease(){
     this.setState({
       count: this.state.count - 1
     });
   }
-  Reset() {
+  reset() {
     this.setState({
       count: 0
     });
@@ -36,10 +36,10 @@ class Counter extends React.Component {
           <h1 className='text-7xl'>Counter</h1>
           <div className='text-5xl py-4 my-7 border border-white border-dashed rounded-full'>{this.state.count}</div>
           <div className='flex justify-center gap-5'>
-            <button className='bg-yellow-400 hover:bg-yellow-600 py-3 px-10 font-bold text-xl rounded-2xl' onClick={this.Increase}>Increase</button>
-            <button className='bg-pink-400 hover:bg-pink-600 py-3 px-10 font-bold text-xl rounded-2xl'  onClick={this.Decrease}>Decrease</button>
+            <button className='bg-yellow-400 hover:bg-yellow-600 py-3 px-10 font-bold text-xl rounded-2xl' onClick={this.increase}>Increase</button>
+            <button className='bg-pink-400 hover:bg-pink-600 py-3 px-10 font-bold text-xl rounded-2xl'  onClick={this.decrease}>Decrease</button>
           </div>
-          <button className='bg-blue-400 hover:bg-blue-600 py-3 px-20 font-bold text-xl my-10 rounded-2xl' onClick={this.Reset}>Reset</button>
+          <button className='bg-blue-400 hover:bg-blue-600 py-3 px-20 font-bold text-xl my-10 rounded-2xl' onClick={this.reset}>Reset</button>
         </section>
       </main>
     );
